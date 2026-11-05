@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Illustration of a Golden Retriever">
+  <rect width="160" height="160" rx="20" fill="#fefce8"/>
+  <ellipse cx="42" cy="85" rx="16" ry="32" fill="#d4a017"/>
+  <ellipse cx="118" cy="85" rx="16" ry="32" fill="#d4a017"/>
+  <circle cx="80" cy="85" r="42" fill="#f0c24a"/>
+  <circle cx="64" cy="78" r="5" fill="#1f2937"/>
+  <circle cx="96" cy="78" r="5" fill="#1f2937"/>
+  <ellipse cx="80" cy="98" rx="10" ry="7" fill="#1f2937"/>
+  <path d="M80 105 q-8 8 -16 2" stroke="#1f2937" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M80 105 q8 8 16 2" stroke="#1f2937" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

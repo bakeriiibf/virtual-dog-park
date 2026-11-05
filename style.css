@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome {
+  color: #4b5563;
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dog-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.dog-card img {
+  display: block;
+  margin: 0 auto 0.75rem;
+  width: 160px;
+  height: 160px;
+}
+
+.dog-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+dl {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+dd {
+  color: #4b5563;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  .dog-grid { grid-template-columns: 1fr; }
+}

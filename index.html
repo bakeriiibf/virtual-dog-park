@@ -4,72 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Virtual Dog Park</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      background: #f5f7fa;
-      color: #1f2937;
-      padding: 2rem 1rem;
-      line-height: 1.5;
-    }
-
-    header { text-align: center; margin-bottom: 2rem; }
-
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-
-    .subtitle { color: #6b7280; }
-
-    .dog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .dog-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1.25rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    }
-
-    .dog-card h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
-
-    .breed { color: #6b7280; font-size: 0.9rem; margin-bottom: 0.75rem; }
-
-    .age { font-size: 0.85rem; color: #374151; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Virtual Dog Park</h1>
-    <p class="subtitle">Meet the dogs waiting for you.</p>
+    <p class="welcome">
+      Welcome! Explore three friendly breeds and learn how to care for them.
+    </p>
   </header>
 
-  <main class="dog-grid" id="dog-grid"></main>
+  <main>
+    <section id="encyclopedia">
+      <h2>Dog Encyclopedia</h2>
+      <div class="dog-grid" id="dog-grid"></div>
+    </section>
+  </main>
 
-  <script>
-    const dogs = [
-      { name: "Milo",    breed: "Corgi",  age: 2, emoji: "🐕" },
-      { name: "Luna",    breed: "Husky",  age: 4, emoji: "🐺" },
-      { name: "Biscuit", breed: "Beagle", age: 1, emoji: "🐶" }
-    ];
-
-    const grid = document.getElementById("dog-grid");
-
-    dogs.forEach((dog) => {
-      const card = document.createElement("article");
-      card.className = "dog-card";
-      card.innerHTML = `
-        <h2>${dog.emoji} ${dog.name}</h2>
-        <p class="breed">${dog.breed}</p>
-        <p class="age">${dog.age} years old</p>
-      `;
-      grid.appendChild(card);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
