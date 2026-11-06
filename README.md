@@ -49,17 +49,17 @@ This means:
 
 ## Manual testing checklist
 
-- [ ] Adopt a dog; it appears with Day 1, Puppy, and 50 happiness.
-- [ ] Feed and Play add 10 happiness and stop at 100.
-- [ ] Next Day adds a day and subtracts 5 happiness, never below 0.
-- [ ] The growth bar shows three clearly different widths for Puppy, Young
+- [x] Adopt a dog; it appears with Day 1, Puppy, and 50 happiness.
+- [x] Feed and Play add 10 happiness and stop at 100.
+- [x] Next Day adds a day and subtracts 5 happiness, never below 0.
+- [x] The growth bar shows three clearly different widths for Puppy, Young
       Dog, and Adult Dog.
-- [ ] Refresh the page; the same dog, day, and happiness come back.
-- [ ] Start Over asks for confirmation; Cancel keeps the dog.
-- [ ] Confirm deletes the saved dog and returns to the adoption form.
-- [ ] The Dog Encyclopedia still shows all three breeds with illustrations.
-- [ ] A narrow browser window stacks the cards with no horizontal scrolling.
-- [ ] The browser console shows no errors.
+- [x] Refresh the page; the same dog, day, and happiness come back.
+- [x] Start Over asks for confirmation; Cancel keeps the dog.
+- [x] Confirm deletes the saved dog and returns to the adoption form.
+- [x] The Dog Encyclopedia still shows all three breeds with illustrations.
+- [x] A narrow browser window stacks the cards with no horizontal scrolling.
+- [x] The browser console shows no errors.
 
 ## Notes
 
