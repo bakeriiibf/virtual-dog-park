@@ -164,3 +164,37 @@ button:hover {
     align-items: stretch;
   }
 }
+
+/* Growth bar */
+.growth {
+  margin-top: 1rem;
+}
+
+.growth-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.growth-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.growth-fill {
+  height: 100%;
+  width: 10%;
+  background: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+button.secondary:hover {
+  background: #4b5563;
+}
