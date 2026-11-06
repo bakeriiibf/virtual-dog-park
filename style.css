@@ -79,3 +79,88 @@ dd {
   h1 { font-size: 1.5rem; }
   .dog-grid { grid-template-columns: 1fr; }
 }
+
+/* My Virtual Dog */
+#virtual-dog {
+  max-width: 700px;
+  margin: 3rem auto 0;
+}
+
+.adopt-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 180px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  font: inherit;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+button {
+  font: inherit;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.form-message {
+  min-height: 1.4rem;
+  margin-top: 0.75rem;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.dog-display {
+  margin-top: 1.25rem;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.dog-display h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .adopt-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

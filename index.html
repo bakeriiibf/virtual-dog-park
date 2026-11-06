@@ -19,6 +19,44 @@
       <h2>Dog Encyclopedia</h2>
       <div class="dog-grid" id="dog-grid"></div>
     </section>
+
+    <section id="virtual-dog">
+      <h2>My Virtual Dog</h2>
+
+      <form id="adopt-form" class="adopt-form">
+        <div class="field">
+          <label for="dog-name">Dog name</label>
+          <input id="dog-name" type="text" maxlength="20" autocomplete="off" />
+        </div>
+
+        <div class="field">
+          <label for="dog-breed">Breed</label>
+          <select id="dog-breed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <button type="submit">Adopt</button>
+      </form>
+
+      <p id="form-message" class="form-message" role="status"></p>
+
+      <div id="dog-display" class="dog-display" hidden>
+        <h3 id="dog-display-name"></h3>
+        <dl>
+          <dt>Breed</dt><dd id="dog-display-breed"></dd>
+          <dt>Day</dt><dd id="dog-display-day"></dd>
+          <dt>Stage</dt><dd id="dog-display-stage"></dd>
+          <dt>Happiness</dt><dd id="dog-display-happiness"></dd>
+        </dl>
+        <div class="actions">
+          <button id="feed-btn" type="button">Feed</button>
+          <button id="play-btn" type="button">Play</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
