@@ -70,6 +70,14 @@ const growthFill = document.getElementById("growth-fill");
 
 let currentDog = null;
 
+// Each stage gets its own visible bar width,
+// so Puppy, Young Dog and Adult Dog look clearly different.
+const STAGE_WIDTH = {
+  "Puppy": 25,
+  "Young Dog": 55,
+  "Adult Dog": 85
+};
+
 // Which growth stage belongs to a given day?
 function getStage(day) {
   if (day === 1) {
@@ -120,8 +128,8 @@ function renderDog(dog) {
   displayStage.textContent = dog.stage;
   displayHappiness.textContent = dog.happiness + " / " + HAPPINESS_MAX;
 
-  // The growth bar grows with the day number and stops at 100%.
-  growthFill.style.width = Math.min(100, dog.day * 10) + "%";
+  // The growth bar shows a different width for each stage.
+  growthFill.style.width = STAGE_WIDTH[dog.stage] + "%";
 }
 
 // Saves the dog in the browser's localStorage under STORAGE_KEY.
